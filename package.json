@@ -2,9 +2,11 @@
   "name": "git-bin",
   "version": "1.0.0",
   "description": "integrated command line for git operation",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./index.js",
+    "build": "./node_modules/.bin/gulp bin"
   },
   "bin": {
     "gitbin": "./bin/index.js"
@@ -41,7 +43,9 @@
     "babel-preset-stage-0": "^6.24.1",
     "cross-spawn": "^5.1.0",
     "fs-extra": "^4.0.2",
+    "gulp": "^3.9.1",
     "home-dir": "^1.0.0",
+    "open": "^0.0.5",
     "parse-git-config": "^1.1.1",
     "webpack": "^3.8.1"
   },
