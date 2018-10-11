@@ -2,7 +2,7 @@
 
 const minimist = require('minimist');
 const invariant = require('invariant');
-const commands = require('./commands/index.js');
+const commands = require('../commands/index.js');
 
 /*
  * ['/usr/local/bin/node', 'path/index.js', 'switch']

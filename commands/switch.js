@@ -13,7 +13,7 @@ module.exports = function() {
     return;
   }
 
-  const cacheJson = utils.readCacheJSON();
+  const cacheJson = utils.getCacheJSON();
 
   const users = [];
   for (var name in cacheJson) {
@@ -46,7 +46,7 @@ module.exports = function() {
       'config',
       '--global',
       'user.email',
-      cache[answers.user]
+      cacheJson[answers.user]
     ]);
     console.log(`成功切换到${answers.user}`);
   });
